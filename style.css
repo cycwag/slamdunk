@@ -163,15 +163,17 @@ span{
 
 .iphone-12 {
     height: 100%;
-    background-image: url(img/iphone_12.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;   
+    background-image: url(img/ringslamdunk-removebg-preview\ \(1\).png);
+    background-repeat: no-repeat; 
+    background-position: bottom;
     }
 
+
 .iphone-12 .title {
-    text-align: center;
-    padding-top: 50px;
+    flex-direction: column;
+      /* Horizontal center */
+    height: 100%;             /* supaya bisa center vertikal penuh */
+    text-align: center;       /* supaya teks rata tengah */
 }
 
 
@@ -179,6 +181,7 @@ span{
     font-size: 50px;
     color: rgba(0, 0, 0, 0.897);
     font-weight: 700;
+
 }
 .iphone-12 .title p {
     font-size: 25px;
@@ -419,7 +422,15 @@ ul {
     visibility: hidden;
 }
 
+.gambargek {
+    
+    height: 720px;
+}
 
+.gambarinal {
+    width: 700px;
+    height: 720px;
+}
 
 .meet {
     text-align: center;
@@ -427,5 +438,29 @@ ul {
 }
 
 .footerteks {
-    margin: auto;
+    margin: auto; 
+}
+
+.btn-dunk {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #ff4d4d, #b30000);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(179, 0, 0, 0.6);
+    cursor: pointer;
+    user-select: none;
+    /* Agar teks di dalam tombol terpusat */
+    text-align: center;
+    background-position: center right;
+}
+
+.btn-dunk:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(179, 0, 0, 0.8);
 }
